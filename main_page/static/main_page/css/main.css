@@ -1,0 +1,61 @@
+.intostore {
+    background: url("images/hookah_bg.jpg") no-repeat;
+    background-size: 100%;
+    color: aliceblue;
+    text-align: center;
+}
+.intostore p {
+    font-size: 22px;
+}
+h1 {
+    font-size: 50px;
+    margin-top: 5%;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+.btninstore:hover {
+    background-color: rgb(151, 101, 21);;
+}
+.btninstore {
+    color: aliceblue;
+    font-size: 25px;
+    background-color: rgba(151, 101, 21, 0.472);
+    border: 2px solid rgb(151, 101, 21);
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+}
+.advanced {
+    padding-top: 5%; 
+    text-align: center;
+ 
+}
+.advanced h2 {
+    color: rgb(151, 101, 21);
+    text-shadow: 1px 1px 2px black;
+    padding-bottom: 5%;
+    letter-spacing: 1.5px;
+}
+.advanced2 p:first-child  {
+    font-size: 25px;
+}
+.advanced2 p:last-child  {
+    font-size: 18px;
+    margin-bottom: 15%;
+}
+
+.aboutus {
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    
+    text-align: left;
+    font-size: 18px;
+}
+.aboutus div.row div p:first-child {
+    font-size: 30px;
+    color:  rgb(151, 101, 21);
+}
+.photo {
+    height: inherit;
+    width: inherit;
+}

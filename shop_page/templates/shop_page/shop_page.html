@@ -1,0 +1,16 @@
+{% extends 'main_page/pattern.html' %}
+{% block title %}Магазин CasperTabaco{% endblock title %}
+{% block content %}
+
+<div class="container">
+    <h1 class="text-uppercase">Магазин</h1>
+    <div class="container">
+        <div class="row">
+            {% for good in object_list %}
+            <a href="#"><h3>{{good.title}}</h3></a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

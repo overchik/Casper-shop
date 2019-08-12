@@ -1,0 +1,56 @@
+{% extends 'main_page/pattern.html' %}
+
+{% block title %}
+Главная страница
+{% endblock title %}
+
+{% block otherstyle %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'main_page/css/main.css' %}" type="text/css">
+{% endblock otherstyle %}
+
+{% block content %}
+
+<div class="row">   
+     <div class="col-12 col-sm-12 col-md-12 col-lg-12 intostore">
+     <h1>Качественный табак для кальяна</h1>
+     <p>повышенная жаростойкость, хорошая дымность и, натуральный вкус</p>
+     <button type="button" class="btn  btninstore text-uppercase">В магазин</button>
+    </div>
+</div>
+<div class="container advanced">   
+     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>Особености табака Casper</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4 advanced2">
+            <p>Высокая жаростойкость</p>
+            <p>Основным отличием от табаков других производителей является жаростойкость и высокое влагосодержание, что позволяет дольше наслаждатся вкусом и нагревать табак для большей дымности, при этом табак совсем не горчит.</p>
+        </div>
+        <div class="col-md-4 advanced2">
+            <p>Широкая линейка вкусов</p>
+            <p>Casper – это легкий табак, все вкусы которого можно курить самостоятельно или наслаждаться вкусовыми ощущениями от экспериментов. В продаже табак Serbetli с разными букетами: сладкие, пряные, миксы, кислые, ледяные.</p>
+        </div>
+        <div class="col-md-4 advanced2">
+            <p>Отличная дымность</p>
+            <p>Относительно дымности табак для кальяна Casper часто сравнивают с Al Fakher или Nakhla, и в этой тройке Casper стабильно удерживает лидерство.</p>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="container advanced aboutus">   
+    <div class="row">
+        <div class="col-md-6">
+            <p>О нас</p>
+            <p>Добрый день! Мы рады приветствовать Вас на страницах нашего интернет-магазина CasperTabaco.net Основное наше преимущество - это постоянное наличие товара, потому как мы напрямую покупаем у производителя! Уверенны, что на просторах нашего интернет-магазина Вы найдете свой вкус табака Щербетли. Приятного дня. </p>
+        </div>
+        <div class="col-md-6 ">
+           <img src="{% load staticfiles %} {% static 'main_page/images/photo.jpg' %}" alt="photo" class="photo">
+        </div>
+    </div>
+</div>
+<hr />
+
+
+
+{% endblock content %}
