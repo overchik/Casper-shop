@@ -1,0 +1,31 @@
+ <h1 class="text-uppercase text-center">Магазин</h1>
+<hr />
+<div class="container" style="margin-bottom: 2%;">   
+    <div class="container ">
+        <div class="row ">
+            {% for good in object_list %}
+            <div class="col-md-4 goodtitleblock"> 
+                <a class="nameofgood" href="">{{good.title}}</a>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="{{good.image.url}}" class="img-fluid"alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="price">{{good.price}} UAH</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-danger" type="button">Купить</button>
+                         <button class="btn btn-primary" type="button">Подробно</button>
+                    </div>
+                </div>
+                
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<hr />

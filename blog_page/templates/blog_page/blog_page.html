@@ -1,0 +1,12 @@
+{% extends 'main_page/pattern.html' %}
+{% block title %}Блог с новостями{% endblock title %}
+
+
+{% load staticfiles %}
+{% block otherstyle%}
+<link rel="stylesheet" href="{% static 'blog_page/css/blog.css' %}" type="text/css">
+{% endblock otherstyle %}
+
+{% block content %}
+{% include 'blog_page/includes/post_render.html' %}
+{% endblock content %}

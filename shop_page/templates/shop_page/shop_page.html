@@ -1,17 +1,11 @@
 {% extends 'main_page/pattern.html' %}
 {% block title %}Магазин CasperTabaco{% endblock title %}
+{% load staticfiles %}
+{% block otherstyle%}
+<link rel="stylesheet" href="{% static 'shop_page/css/shop.css' %}" type="text/css">
+{% endblock otherstyle %}
 {% block content %}
 
-<div class="container">
-    <h1 class="text-uppercase">Магазин</h1>
-    <div class="container">
-        <div class="row">
-            {% for good in object_list %}
-            <a href="#"><h3>{{good.price}}</h3></a>
-            <img src="{{ good.image.url }}" alt="image">
-            {% endfor %}
-        </div>
-    </div>
-</div>
+{% include 'shop_page/includes/goods_render.html' %}
 
 {% endblock content %}

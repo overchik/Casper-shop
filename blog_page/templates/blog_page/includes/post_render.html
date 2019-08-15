@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <h1 class="text-uppercase text-center">Блог и новости</h1>
+    <hr />
+    <div class="row">
+    <div class="container">
+            {% for post in object_list %}
+            
+                    <div class="row postblock col-lg-12 col-md-12  col-sm-12 col-12">
+                        <div class="col-lg-6 col-md-6  col-sm-12 col-12">
+                            <a class="posttitle" href="#">{{post.title}}</a>
+                            <br />
+                            <p class="thepost">{{post.post|linebreaks}}</p>
+                            <p class="postdate">{{post.date}}</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6  col-sm-12 col-12">
+                            <a href="#"><img src="{{post.image.url}}" class="img-fluid" alt="image"></a>
+                        </div>
+                    </div>
+            <hr />
+            {% endfor %}
+            </div>
+    </div>
+    
+</div>
+
+

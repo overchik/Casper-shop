@@ -1,0 +1,15 @@
+.goodtitleblock {
+      
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis; /* Многоточие */
+}
+.nameofgood {
+    color: rgb(41, 38, 38);
+    font-size: 28px; 
+}
+.price {
+    font-size: 20px;
+    padding-top: 10px;
+    color: rgb(16, 82, 156);
+}
