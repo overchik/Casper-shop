@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'main_page',
     'shop_page',
     'blog_page',
+    'delivery_page',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
