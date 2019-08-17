@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Goods
+
+def post_goods(request):
+    goods = Goods.objects.all()
+    return render(request, 'shop_page/shop_page.html', {'goods':goods})
